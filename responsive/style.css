@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  background-color: rgb(215, 245, 255);
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: white;
+  padding: 5px 30px;
+  display: flex;
+  justify-content: end;
+  box-shadow: 1px 3px 5px 0px rgba(87, 87, 87, 0.75);
+  -webkit-box-shadow: 1px 3px 5px 0px rgba(87, 87, 87, 0.75);
+  -moz-box-shadow: 1px 3px 5px 0px rgba(87, 87, 87, 0.75);
+  position: sticky;
+  top: 0;
+  /* width: 100%; */
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin-left: 15px;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(54, 54, 54);
+}
+
+.content {
+  padding: 0 50px;
+}
+
+/* section profile */
+.profile {
+  background-color: white;
+  /* width: 100%; */
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  box-shadow: 1px 1px 5px 3px rgba(87, 87, 87, 0.68);
+  -webkit-box-shadow: 1px 1px 5px 3px rgba(87, 87, 87, 0.68);
+  -moz-box-shadow: 1px 1px 5px 3px rgba(87, 87, 87, 0.68);
+}
+
+.left {
+  margin-right: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.left img {
+  margin-right: 20px;
+  width: 130px;
+  height: 130px;
+}
+
+.left .name-group {
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left .name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.left .work {
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+.left .btn-left,
+.left .btn-right {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+}
+
+.left .btn-left {
+  background-color: darkblue;
+  color: white;
+}
+
+.left .btn-right {
+  background-color: white;
+  color: green;
+}
+
+.right {
+  display: flex;
+  font-size: 12px;
+  height: 130px;
+}
+
+.right-title {
+  margin-right: 30px;
+}
+
+.right-title p {
+  font-weight: bold;
+}
+
+form {
+  margin-top: 40px;
+  width: 100%;
+  margin-bottom: 300px;
+}
+
+form div input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  flex-direction: column;
+  background-color: green;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    padding: 0;
+    width: 100vw;
+  }
+
+  .profile {
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .left .name-work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right {
+    margin-top: 20px;
+    /* margin: 0 auto; */
+  }
+}

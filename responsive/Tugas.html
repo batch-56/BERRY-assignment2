@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href>Home</a></li>
+      <li><a href>Product</a></li>
+      <li><a href>Galery</a></li>
+      <li><a href>Blog</a></li>
+      <li><a href>Inventory</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <!-- profile -->
+    <div class="profile">
+      <!-- left -->
+      <div class="left">
+        <img src="images/gita.jpeg" />
+        <div class="name-group">
+          <div class="name-work">
+            <p id="name">BERRY ALPIAN HIDAYAT</p>
+            <p id="work">Front End Designer</p>
+          </div>
+          <div>
+            <button class="btn-left" type="submit">Kontak</button>
+            <button class="btn-right" type="submit">Resume</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- right -->
+      <div class="right">
+        <div class="right-title">
+          <p id="avail">Availability</p>
+          <p id="usia">usia</p>
+          <p id="lokasi">Lokasi</p>
+          <p id="expr">Pengalaman</p>
+          <p id="mail">Email</p>
+        </div>
+        <!-- <div>
+          <p>Full Time</p>
+          <p>17</p>
+          <p>jakarta, Indonesia</p>
+          <p>2</p>
+          <p>Developer@gmail.com</p>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- form -->
+    <form onsubmit="return myFunction(event)">
+      <div>
+        <label for="masukkan nama anda">Nama</label>
+        <input type="text" name="nama" placeholder="masukkan nama" id="input-nama" />
+      </div>
+
+      <div>
+        <label for="Role"> Role</label>
+        <input type="text" name="role" placeholder="masukkan role anda" id="input-role" />
+      </div>
+
+      <div>
+        <label for="Availability"> Availability</label>
+        <input type="text" name="availability" placeholder="masukkan tanggal" id="input-avail" />
+      </div>
+
+      <div>
+        <label for="Usia"> Usia</label>
+        <input type="text" name="" placeholder="usia anda" id="input-usia" />
+      </div>
+
+      <div>
+        <label for="Lokasi"> Lokasi</label>
+        <input type="text" name="lokasi" placeholder="masukkan lokasi anda" id="input-loc" />
+      </div>
+
+      <div>
+        <label for="Years Experience"> Years Experience</label>
+        <input type="text" name="experience" placeholder="masukkan lama pengalaman" id="input-expr" />
+      </div>
+
+      <div>
+        <label for="Email"> Email</label>
+        <input type="text" name="email" placeholder="masukkan email anda" id="input-mail" />
+      </div>
+      
+      <!-- form button -->
+      <div class="btn">
+        <button>Submit</button>
+      </div>
+
+    </form>
+
+
+  </div>
+  <script src="sesi5.js">
+  </script>
+</body>
+
+</html>
